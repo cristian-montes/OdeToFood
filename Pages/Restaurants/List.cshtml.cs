@@ -18,12 +18,15 @@ namespace OdeToFood.Pages.Restaurants
         public string Message {get; set; }
         public IEnumerable<Restaurant> Restaurants {get; set; }
         
+
+
         // THIS IS THE CONSTRUCTOR OD THE CLASS
         public ListModel(IConfiguration config, IRestaurantData restaurantData)
         {
             this.config = config;
             this.restautantData =  restaurantData;
         }
+        
         public void OnGet()
         {
             Message = config["Message"];

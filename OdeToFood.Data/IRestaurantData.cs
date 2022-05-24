@@ -11,6 +11,9 @@ namespace OdeToFood.OdeToFood.Data
         IEnumerable<Restaurant> GetAll();
     }
 
+
+
+
     public class InMemoryRestaurantData : IRestaurantData
     {
         //Declaring this the data type and structure of the List
@@ -26,6 +29,9 @@ namespace OdeToFood.OdeToFood.Data
             };
 
         }
+
+
+
 
         public IEnumerable<Restaurant> GetAll()
         {
