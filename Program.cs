@@ -3,6 +3,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+// This line to be removed when DB added ... this is just for Developemt Purposes. 
+builder.Services.AddSingleton<OdeToFood.OdeToFood.Data.IRestaurantData, OdeToFood.OdeToFood.Data.InMemoryRestaurantData>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
