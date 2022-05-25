@@ -17,7 +17,9 @@ namespace OdeToFood.Pages.Restaurants
         private readonly IRestaurantData restautantData;
         public string Message {get; set; }
         public IEnumerable<Restaurant> Restaurants {get; set; }
-        
+       
+        [BindProperty (SupportsGet =true)]  // make the below field act as an input/output when the http request gets executed. 
+        public string SearchTerm {get; set; }
 
 
         // THIS IS THE CONSTRUCTOR OD THE CLASS
@@ -27,10 +29,10 @@ namespace OdeToFood.Pages.Restaurants
             this.restautantData =  restaurantData;
         }
         
-        public void OnGet()
+        public void OnGet(string searchTerm)
         {
             Message = config["Message"];
-            Restaurants = restautantData.GetAll();
+            Restaurants = restautantData.GetRestaurantsByName(SearchTerm);
         }
     }
 }
