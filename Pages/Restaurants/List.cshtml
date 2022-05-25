@@ -11,9 +11,10 @@
             <div class="input-group">
                 <input type="search"          class="form-control" asp-for="SearchTerm" />
                 <span class="input-group-btn">
-                    <button class="btn btn-default">
-                        @* <i class="fa fa-search"></i> *@
-                        Search 
+                    <button class="btn btn-primary">
+                        <span class="bi-search">
+                            Search
+                        </span>
                     </button>
                 </span>
             </div>
@@ -29,6 +30,21 @@
                 <td>@restaurant.Name</td>
                 <td>@restaurant.Location</td>
                 <td>@restaurant.Cuisine</td>
+                <td>
+
+                    <button >
+                        @* <span class="bi-search">
+                            Search
+                        </span> *@
+                  
+                    <a class="btn btn-lg"
+                       asp-page="./Detail"
+                       asp-route-restaurantId = "@restaurant.Id"
+                    >
+                       Search
+                    </a>
+                    </button>
+                </td>
             </tr>
         }
     </table>
