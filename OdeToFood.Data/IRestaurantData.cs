@@ -9,6 +9,7 @@ namespace OdeToFood.OdeToFood.Data
     public interface IRestaurantData
     {
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
+        Restaurant GetById(int id);
     }
 
 
@@ -31,6 +32,9 @@ namespace OdeToFood.OdeToFood.Data
         }
 
 
+        public Restaurant GetById(int id){
+            return restaurants.SingleOrDefault(r => r.Id == id);
+        }
 
 
         public IEnumerable<Restaurant> GetRestaurantsByName(string name =  null)

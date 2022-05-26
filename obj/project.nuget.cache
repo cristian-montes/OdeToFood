@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dbOZnAxWZTLMbZ5kK2Xze5X2nzZ7HuUU2xVWlM00TEtQy4rsAtKLZLmtI1IvxnysGXbhMyH6eJxyUVrVsCG8Ag==",
+  "dgSpecHash": "EZAoc9T6uLwnhx0N8XOuwO5I7ivk12qcuFlusd6brZml4VXiX2H9Fb+6WYo2BDvzrNs8EjKEtuaSfKS7/x9XIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crmontes\\Documents\\OdeToFood\\OdeToFood.csproj",
+  "projectFilePath": "C:\\Users\\crmontes\\documents\\OdeToFood\\OdeToFood.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crmontes\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\crmontes\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
