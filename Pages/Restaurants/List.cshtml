@@ -33,17 +33,25 @@
                 <td>
 
                     <button >
-                        @* <span class="bi-search">
-                            Search
-                        </span> *@
                   
-                    <a class="btn btn-lg"
-                       asp-page="./Detail"
-                       asp-route-restaurantId = "@restaurant.Id"
-                    >
-                       Search
-                    </a>
+                        <a class="btn btn-lg"
+                        asp-page="./Detail"
+                        asp-route-restaurantId = "@restaurant.Id"
+                        >
+                        Search
+                        </a>
                     </button>
+
+                     <button >
+                  
+                        <a class="btn btn-lg"
+                        asp-page="./Edit"
+                        asp-route-restaurantId = "@restaurant.Id"
+                        >
+                        Edit
+                        </a>
+                    </button>
+
                 </td>
             </tr>
         }

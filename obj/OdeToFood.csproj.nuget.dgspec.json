@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\crmontes\\documents\\OdeToFood\\OdeToFood.csproj": {}
+    "C:\\Users\\crmontes\\OneDrive - Capgemini\\Documents\\OdeToFood\\OdeToFood.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crmontes\\documents\\OdeToFood\\OdeToFood.csproj": {
+    "C:\\Users\\crmontes\\OneDrive - Capgemini\\Documents\\OdeToFood\\OdeToFood.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crmontes\\documents\\OdeToFood\\OdeToFood.csproj",
+        "projectUniqueName": "C:\\Users\\crmontes\\OneDrive - Capgemini\\Documents\\OdeToFood\\OdeToFood.csproj",
         "projectName": "OdeToFood",
-        "projectPath": "C:\\Users\\crmontes\\documents\\OdeToFood\\OdeToFood.csproj",
+        "projectPath": "C:\\Users\\crmontes\\OneDrive - Capgemini\\Documents\\OdeToFood\\OdeToFood.csproj",
         "packagesPath": "C:\\Users\\crmontes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crmontes\\documents\\OdeToFood\\obj\\",
+        "outputPath": "C:\\Users\\crmontes\\OneDrive - Capgemini\\Documents\\OdeToFood\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\crmontes\\AppData\\Roaming\\NuGet\\NuGet.Config"
