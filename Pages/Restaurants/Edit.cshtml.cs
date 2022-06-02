@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using OdeToFood.OdeToFood.Data;
 using OdeToFood.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace OdeToFood.Pages.Restaurants
 {
@@ -14,16 +15,22 @@ namespace OdeToFood.Pages.Restaurants
     {
       
         private readonly IRestaurantData restaurantData;
-        public Restaurant Restaurant {get; set; }
+        private readonly IHtmlHelper htmlHelper;
 
-        public Edit(IRestaurantData restaurantData)
+        [BindProperty]
+        public Restaurant Restaurant {get; set; }
+        public IEnumerable<SelectListItem> Cuisines {get; set; }
+
+        public Edit(IRestaurantData restaurantData, IHtmlHelper htmlHelper)
         {
             this.restaurantData = restaurantData;
+            this.htmlHelper = htmlHelper;
         }
 
 
       public IActionResult OnGet(int restaurantId)
         {
+            Cuisines  = htmlHelper.GetEnumSelectList<CuisineType>();
             Restaurant = restaurantData.GetById(restaurantId);
             if(Restaurant == null)
             {
@@ -32,5 +39,15 @@ namespace OdeToFood.Pages.Restaurants
 
             return Page();
        }
+
+
+        public IActionResult OnPost()
+        {
+            Restaurant = restaurantData.Update(Restaurant);
+            restaurantData.Commit();
+            return Page();
+        }
+
+
     }
 }
