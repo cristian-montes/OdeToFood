@@ -16,6 +16,8 @@ namespace OdeToFood.Entities
 
         [Required, StringLength(255)]
         public string Location {get; set; }
+
+        [Required]
         public CuisineType Cuisine {get; set; }
     }
 }
